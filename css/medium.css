@@ -1,0 +1,19 @@
+body {
+  font-size: 2rem;
+}
+
+main .card {
+  flex-direction: row;
+}
+main .card .stats .stats-box {
+  flex-direction: row;
+  justify-content: space-around;
+}
+main .card .mobile-image {
+  display: none;
+}
+main .card .desktop-image {
+  display: block;
+}
+
+/*# sourceMappingURL=medium.css.map */

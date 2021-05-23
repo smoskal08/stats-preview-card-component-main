@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  background-color: #090b1a;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 8px;
+  background-color: rgba(170, 92, 219, 0.6);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 100%;
+}
+main .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #1b1938;
+}
+main .card .stats {
+  padding: 20px 10px;
+  text-align: center;
+}
+main .card .stats h1 {
+  margin-bottom: 20px;
+}
+main .card .stats h1, main .card .stats h2 {
+  color: white;
+}
+main .card .stats h1 span, main .card .stats h2 span {
+  color: #aa5cdb;
+}
+main .card .stats > p {
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.75);
+}
+main .card .stats .stats-box {
+  display: flex;
+  flex-direction: column;
+}
+main .card .stats .stats-box .stat {
+  margin-bottom: 20px;
+}
+main .card .stats .stats-box .stat:last-child {
+  margin-bottom: 0;
+}
+main .card .stats .stats-box .stat p {
+  margin-top: 5px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+main .card .mobile-image, main .card .desktop-image {
+  position: relative;
+}
+main .card .mobile-image img, main .card .desktop-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+}
+main .card .mobile-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+main .card .mobile-image img {
+  border-top-left-radius: 8px;
+}
+main .card .mobile-image .shadow {
+  border-top-left-radius: 8px;
+}
+main .card .desktop-image {
+  display: none;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+  background-color: #777;
+}
+
+/*# sourceMappingURL=style.css.map */
